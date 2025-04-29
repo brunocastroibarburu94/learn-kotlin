@@ -51,6 +51,15 @@ Also check the  compatibility between Gradle, Kotlin & Java at the [Gradle websi
 
 
 ##### Notes
+
+```bash
+gradle build
+
+# After executing gradle build the Kotlin Launch configuration in .vscode/launch.json works.
+
+```
+
+**init command**
 ```bash
 # Create new gradle project structure
 gradle init
