@@ -9,9 +9,17 @@ Android 13 supports Java 11 for its core libraries, as well as some features fro
 ```bash
 # Compile the file main.kt into the file main.jar
 kotlinc main.kt -include-runtime -d main.jar
+
+# Since the build will create an executable jar file you can invoke it with the Java Runtime Environment.
+java -jar main.jar
 ```
 
 # Requirements
+### VS Code Setup
+For up to date guidance visit [this guide](https://in-kotlin.com/ide/vscode/setup-vscode-for-kotlin-development/).
+
+
+ <!-- a read on this guide  -->
 
 ### JDK & Java
 The JDK (Java Development Kit) is a software development kit used for creating Java applications, while "Java version" refers to the specific version of the Java programming language. The JDK includes everything needed to develop, compile, and run Java programs, including the JRE (Java Runtime Environment) and development tools like compilers and debuggers. The JRE, in turn, provides the runtime environment for executing Java applications
