@@ -7,6 +7,10 @@ Android 13 supports Java 11 for its core libraries, as well as some features fro
 # Useful commands
 
 ```bash
+# Check version of kotlin used
+kotlinc -version
+# info: kotlinc-jvm 2.1.20 (JRE 21.0.7+6-LTS)
+
 # Compile the file main.kt into the file main.jar
 kotlinc main.kt -include-runtime -d main.jar
 
@@ -19,7 +23,6 @@ java -jar main.jar
 For up to date guidance visit [this guide](https://in-kotlin.com/ide/vscode/setup-vscode-for-kotlin-development/).
 
 
- <!-- a read on this guide  -->
 
 ### JDK & Java
 The JDK (Java Development Kit) is a software development kit used for creating Java applications, while "Java version" refers to the specific version of the Java programming language. The JDK includes everything needed to develop, compile, and run Java programs, including the JRE (Java Runtime Environment) and development tools like compilers and debuggers. The JRE, in turn, provides the runtime environment for executing Java applications
@@ -31,6 +34,24 @@ The JDK (Java Development Kit) is a software development kit used for creating J
 
 For updates check [the official instructions](https://kotlinlang.org/docs/command-line.html).
 
-1. Go to [Jetbrain's kotlin repo release's website](https://github.com/JetBrains/kotlin/releases/tag/v2.1.20) for a desirable release.
+1. Go to [Jetbrain kotlin repo release's website](https://github.com/JetBrains/kotlin/releases/tag/v2.1.20) for a desirable release.
 1. Scroll to the bottom of the page and in the `Assets` section of the release page download the compiler `kotlin-compiler-2.1.20.zip` 
 1. Unzip the file, add the `bin` directory to the system path, it should be self-contained.
+
+### Installing Gradle
+The VSCode Kotlin Language debugger makes use of gradle.
+
+Visit the [Gradle website](https://docs.gradle.org/current/userguide/installation.html#windows_installation) for instructions on how to install gradle.
+
+Also check the  compatibility between Gradle, Kotlin & Java at the [Gradle website](https://docs.gradle.org/current/userguide/compatibility.html#compatibility)
+
+1. Go to the [Gradle release page](https://gradle.org/releases/)
+1. Download the binary-only of a suitable version i.e. `v8.11`
+1. Unzip the file and add the `bin` directory to the `PATH` environment variables
+
+
+##### Notes
+```bash
+# Create new gradle files
+gradle init
+```
